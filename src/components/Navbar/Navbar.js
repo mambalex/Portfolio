@@ -36,8 +36,11 @@ class Navbar extends Component {
 
     scrollHandler = () => {
         const currentScrollPos = window.pageYOffset;
-        const visible = this.state.prevScrollpos > currentScrollPos;
+        var visible = this.state.prevScrollpos > currentScrollPos;
         const boxShadow = window.innerWidth > 576 && currentScrollPos > 20;
+        if(window.innerWidth <= 576){
+            visible=true
+        }
         this.setState({
             prevScrollpos : currentScrollPos,
             visible,
