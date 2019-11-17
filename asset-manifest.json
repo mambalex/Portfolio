@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "alexzhang.co/static/css/main.bd7244da.chunk.css",
+    "main.js": "alexzhang.co/static/js/main.41536369.chunk.js",
+    "main.js.map": "alexzhang.co/static/js/main.41536369.chunk.js.map",
+    "runtime~main.js": "alexzhang.co/static/js/runtime~main.475750f7.js",
+    "runtime~main.js.map": "alexzhang.co/static/js/runtime~main.475750f7.js.map",
+    "static/js/2.2ffc2f1f.chunk.js": "alexzhang.co/static/js/2.2ffc2f1f.chunk.js",
+    "static/js/2.2ffc2f1f.chunk.js.map": "alexzhang.co/static/js/2.2ffc2f1f.chunk.js.map",
+    "index.html": "alexzhang.co/index.html",
+    "precache-manifest.e59c0322caf6cc4fcc3ab3c954f15d95.js": "alexzhang.co/precache-manifest.e59c0322caf6cc4fcc3ab3c954f15d95.js",
+    "service-worker.js": "alexzhang.co/service-worker.js",
+    "static/css/main.bd7244da.chunk.css.map": "alexzhang.co/static/css/main.bd7244da.chunk.css.map",
+    "static/media/alexZhang.jpg": "alexzhang.co/static/media/alexZhang.8dce611d.jpg",
+    "static/media/proj1.jpg": "alexzhang.co/static/media/proj1.aa8bc247.jpg",
+    "static/media/proj2.jpg": "alexzhang.co/static/media/proj2.561cb2c4.jpg",
+    "static/media/proj3.jpg": "alexzhang.co/static/media/proj3.57216e3b.jpg",
+    "static/media/proj4.jpg": "alexzhang.co/static/media/proj4.e494591f.jpg"
+  }
+}
