@@ -1,0 +1,99 @@
+@import "assets/styles/HelperFunctions";
+
+.Intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 0;
+  .image-wrapper{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    transform: translate3d(0px, 0px, 0px);
+    box-shadow: white 0px 0px 0px 3px, rgb(204, 204, 204) 0px 3px 8px 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 50px auto 13.2px;
+    img{
+      position: absolute;
+      top: 10px;
+      left: 22px;
+      width: 70%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 60%;
+      transition: opacity 0.5s ease 0.5s;
+    }
+  }
+  .name{
+    //font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 8px !important;
+  }
+  .role{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    li:nth-child(2){
+      margin: 0 10px 6px;
+    }
+    li{
+      padding: 2px 10px 2px 10px;
+      margin-bottom: 6px;
+      background-color: rgba(87, 199, 255, 0.1);
+      border-right: 2px solid rgba(87, 199, 255, 0.3);
+      border-left: 2px solid rgba(87, 199, 255, 0.3);
+    }
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 40em;
+    text-align: center;
+    &::after{
+      content: "◦";
+      font-size: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -20px;
+      color: rgb(0,0,0);
+    }
+    @include sm{
+      &::after{
+        content: "◦";
+        font-size: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -26.4px;
+        color: rgb(0,0,0);
+      }
+    }
+
+  }
+  .contact-logo{
+    display: flex;
+    color: rgba(0, 0, 0, 0.7);
+    list-style: none;
+    font-size: 24px;
+    li:nth-child(2){
+      margin: 0 20px;
+    }
+    li{
+      cursor: pointer;
+      &:hover{
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+
+  ul{
+    padding: 0 !important;
+  }
+}

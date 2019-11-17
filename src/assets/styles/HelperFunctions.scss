@@ -1,0 +1,38 @@
+@import 'Variables';
+@import 'Breakpoints';
+
+
+//base font size
+$base_size: calc(12px + 0.35vw) / 1px;
+@function em($px, $base: $base_size) {
+  //$strippedValue: $base / ($base * 0 + 1);
+  @return  #{$px} / #{$base} * 1em;
+}
+
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  //padding-right: 1em;
+  &:before {
+    content: '...';
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    position: absolute;
+    right: 2px;
+    bottom: 1px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 2px;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+

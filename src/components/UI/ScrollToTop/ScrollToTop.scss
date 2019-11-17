@@ -1,0 +1,20 @@
+@import "assets/styles/HelperFunctions";
+
+.ScrollToTop {
+  background-size: contain;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right: 0px;
+  bottom: 30px;
+  @include md{
+    right: 30px;
+    bottom: 30px;
+  }
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  &.show{
+    opacity: 1;
+  }
+}
